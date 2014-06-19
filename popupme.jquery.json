@@ -1,0 +1,27 @@
+{
+    "name": "popupme",
+    "title": "PopUpMe",
+    "description": "A jQuery plugin for showing simple and beautiful PopUps.",
+    "keywords": [
+        "popup",
+        "ui"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Kirtan Thakkar"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/ktkt1993/popupme/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/ktkt1993/popupme/issues",
+    "homepage": "http://popupme.freeiz.com",
+    "docs": "http://popupme.freeiz.com/",
+    "demo": "http://popupme.freeiz.com/?goto=demo",
+    "download": "http://popupme.freeiz.com/?goto=download",
+    "dependencies": {
+        "jquery": ">=1.7"
+    }
+}

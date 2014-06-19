@@ -1,0 +1,108 @@
+/* PopUpMe v1.0.0  |  (c) 2014  | Kirtan Thakkar */
+
+
+.popupme-background {
+	
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	z-index: 1001;
+}
+
+/* Now PopUp CSS */
+
+.popupme
+{
+	background-color:white;
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:500px;
+	box-shadow: 0px 0px 15px #FFFFFF;
+	z-index:1005;
+	border-radius:5px;
+	overflow:hidden;
+	letter-spacing:0px;
+	line-height:1;
+}
+
+.popupme .popupme-title
+{
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	margin:2px;
+	padding:10px;
+	font-family:Verdana;
+	font-size:22px;
+	color:white;
+	background-color:skyblue;
+	overflow:hidden;
+}	
+
+.popupme .popupme-text
+{
+	margin-left:2px;
+	margin-right:2px;
+	margin-bottom:2px;
+	margin-top:-3px;
+	padding:10px;
+	line-height: 130%;
+	font-family:Verdana;
+	border:1px solid skyblue;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	overflow-y:auto;
+}
+
+.popupme .popupme-close
+{
+	position:absolute;
+	right:10px;
+	top:10px;
+	font-family:Verdana;
+	font-size:15px;
+	text-align:center;
+	background-color:White;
+	padding-left:8px;
+	padding-right:8px;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-radius:20px;
+}
+
+.popupme .popupme-close:hover
+{
+	cursor:pointer;
+	background-color:#DEDEDE;
+}
+
+.popupme-hide
+{
+	visibility:hidden;
+	opacity:0;
+	transition:visibility 0s linear .5s,opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.popupme-show
+{
+	opacity:1;
+	visibility:visible;
+	transition:visibility 0s linear .5s,opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transition-delay:0s;
+}
+
+.popupme-show-5
+{
+	opacity:0.5;
+	visibility:visible;
+	transition:visibility 0s linear .5s,opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transition-delay:0s;
+}
+
+
+
+
+

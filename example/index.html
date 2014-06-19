@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="../css/popupme.css">
+
+	<script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/popupme.js"></script>
+
+	<script type="text/javascript">
+	
+		$(document).ready(function(){
+			
+			//Demo Popups
+			
+			$("#simplepop").popupme({title:'Hello',text:'This is a simple Popup Box.'});
+			$("#growpop").popupme({title:'Hello',text:'This is a simple Popup Box. But the information is more. And more. And even more. The size of the box will grow as the information will grow. It can grow big and big.'});
+			$("#htmlpop").popupme({title:'Hello',text:'This can include any html<br><ul><li>In the list<li><ol><li>First item<li>Second item</ol><li>More item</ul>'});
+			$("#largepop").popupme({title:'Hello',text:'One line.<br>Second line<br>Third line<br>More line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>Another line<br>And its Overflowing with the scrollbar !<br>'});
+			
+			
+		});
+		
+		
+	
+	</script>
+	
+	
+	
+	
+</head>
+
+<body>
+	
+	<div class="body-wrapper">
+		<div style="position:relative; height:100%; width:100%;">
+			
+			<h1> PopUpMe - A jQuery Plugin</h1>
+			
+			<hr />
+			
+			<p class="panel">Like it can be used to show a &nbsp;&nbsp;&nbsp;<a href="" id="simplepop"> Simple </a>&nbsp;&nbsp;&nbsp; information.</p>
+			<p class="panel">More Information? It will automatically &nbsp;&nbsp;&nbsp;<a href="" id="growpop"> Grow </a>&nbsp;&nbsp;&nbsp; with more information.</p>
+			<p class="panel">I forgot ! You can also put &nbsp;&nbsp;&nbsp;<a href="" id="htmlpop"> HTML </a>&nbsp;&nbsp;&nbsp; content.</p>
+			<p class="panel">Too much information? Don't worry ! &nbsp;&nbsp;&nbsp;<a href="" id="largepop"> Large </a>&nbsp;&nbsp;&nbsp; information can also fit with the scrollbar.</p>
+			
+			 <div class="panel" id="sidebar">
+			 <hr />
+				<h5>Version</h5>
+				<p>v 1.0</p>
+				<hr />
+				For detils visit: <a href="http://popupme.freeiz.com">http://popupme.freeiz.com</a>
+				<hr />
+				<h5>Author</h5>
+				<p>Kirtan Thakkar</p>
+			  </div>
+			
+		</div>
+	</div>
+
+</body>
