@@ -103,6 +103,149 @@
 }
 
 
+/* Animation Class Resetting */
+.popupme-opacity-0
+{
+	visibility:hidden;
+	opacity:0;
+}
+/* Animation for setting initial value and adding and removing animations*/
+
+/* ------- Fade-in Effect -------*/
+.popupme-fadein
+{
+	opacity:1;
+	visibility:visible;
+	
+	-webkit-transition:opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	-moz-transition:opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transition:opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+.popupme-fadein-remove
+{
+	-webkit-transition:opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000),
+				visibility 0s linear .5s;
+	-moz-transition:opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000),
+				visibility 0s linear .5s;
+	transition:opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000),
+				visibility 0s linear .5s;
+	visibility:hidden;
+}
 
 
+/*------- Zoom-in Effect --------*/
+.popupme-zoomin-set
+{
+	transform:scale(2,2);
+	-moz-transform:scale(2,2);
+	-webkit-transform:scale(2,2);
+}
+
+.popupme-zoomin-remove
+{
+	-webkit-transition:-webkit-transform .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		opacity .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		visibility 0s linear .5s;
+	-moz-transition:-moz-transform .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		opacity .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		visibility 0s linear .5s;
+	transition:transform .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		opacity .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		visibility 0s linear .5s;
+	visibility:hidden;
+}
+
+.popupme-zoomin
+{
+	opacity:1;
+	visibility:visible;
+	transform:scale(1,1);
+	-moz-transform:scale(1,1);
+	-webkit-transform:scale(1,1);
+	
+	-webkit-transition:-webkit-transform .5s cubic-bezier(0.165, 0.840, 0.440, 1.000),
+		opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	-moz-transition:-moz-transform .5s cubic-bezier(0.165, 0.840, 0.440, 1.000),
+		opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transition:transform .5s cubic-bezier(0.165, 0.840, 0.440, 1.000),
+		opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+/*------- Zoom-out Effect -------*/
+.popupme-zoomout-set
+{
+	transform:scale(0,0);
+	-moz-transform:scale(0,0);
+	-webkit-transform:scale(0,0);
+}
+
+.popupme-zoomout-remove
+{
+	-webkit-transition:-webkit-transform .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		opacity .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		visibility 0s linear .5s;
+	-moz-transition:-moz-transform .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		opacity .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		visibility 0s linear .5s;
+	transition:transform .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		opacity .5s cubic-bezier(0.190, 1.000, 0.000, 0.980),
+		visibility 0s linear .5s;
+	visibility:hidden;
+}
+
+.popupme-zoomout
+{
+	opacity:1;
+	visibility:visible;
+	transform:scale(1,1);
+	-moz-transform:scale(1,1);
+	-webkit-transform:scale(1,1);
+	
+	-webkit-transition:-webkit-transform .5s cubic-bezier(0.165, 0.840, 0.440, 1.000),
+		opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	-moz-transition:-moz-transform .5s cubic-bezier(0.165, 0.840, 0.440, 1.000),
+		opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	transition:transform .5s cubic-bezier(0.165, 0.840, 0.440, 1.000),
+		opacity .5s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+}
+
+
+/*------- Rotate Effect -------*/
+.popupme-rotate-set
+{
+	transform:rotate(-720deg) scale(2,2);
+	-moz-transform:rotate(-720deg) scale(2,2);
+	-webkit-transform:rotate(-720deg) scale(2,2);
+}
+
+.popupme-rotate-remove
+{
+	-webkit-transition:-webkit-transform .5s ease-out,
+		opacity .5s ease-out,
+		visibility 0s linear .5s;
+	-moz-transition:-moz-transform .5s ease-out,
+		opacity .5s ease-out,
+		visibility 0s linear .5s;
+	transition:transform .5s ease-out,
+		opacity .5s ease-out,
+		visibility 0s linear .5s;
+	visibility:hidden;
+}
+
+.popupme-rotate
+{
+	opacity:1;
+	visibility:visible;
+	transform:rotate(0deg) scale(1,1);
+	-moz-transform:rotate(0deg) scale(1,1);
+	-webkit-transform:rotate(0deg) scale(1,1);
+	
+	-webkit-transition:-webkit-transform .5s ease-out,
+		opacity .5s ease-out;
+	-moz-transition:-moz-transform .5s ease-out,
+		opacity .5s ease-out;
+	transition:transform .5s ease-out,
+		opacity .5s ease-out;
+}
 
