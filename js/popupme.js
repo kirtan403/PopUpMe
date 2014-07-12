@@ -25,6 +25,9 @@ $(document).ready(function(){
 				var topPer,leftPer;
 				var anim = param.animation;
 				
+				var leftPer;
+				var topPer;
+				
 				function popupme_center()
 				{
 					var winHeight = $(window).height();
@@ -38,12 +41,11 @@ $(document).ready(function(){
 					var popupHeight = $(".popupme").height();
 					var popupWidth = $(".popupme").width();
 					
-					var leftPer = (((winWidth - popupWidth) / winWidth) * 100 ) / 2 ;
+					leftPer = (((winWidth - popupWidth) / winWidth) * 100 ) / 2 ;
 					
-					var topPer = (((winHeight - popupHeight) / winHeight) * 100 ) / 2 ;
+					topPer = (((winHeight - popupHeight) / winHeight) * 100 ) / 2 ;
 					
-					$(".popupme").css('left',leftPer+"%");
-					$(".popupme").css('top',topPer+"%");
+					
 				}
 				
 				$(this).on('click',function(event){
@@ -61,19 +63,87 @@ $(document).ready(function(){
 					
 					if(typeof(anim) == "undefined" || anim == null || anim == "fade-in")
 					{
+						$(".popupme").css('left',leftPer+"%");
+						$(".popupme").css('top',topPer+"%");
+						
 						$(".popupme").show().addClass("popupme-fadein");
 					}
 					else if(anim == "zoom-in")
 					{
+						$(".popupme").css('left',leftPer+"%");
+						$(".popupme").css('top',topPer+"%");
+						
 						$(".popupme").addClass("popupme-zoomin-set").show().addClass("popupme-zoomin");
 					}
 					else if(anim == "zoom-out")
 					{
+						$(".popupme").css('left',leftPer+"%");
+						$(".popupme").css('top',topPer+"%");
+						
 						$(".popupme").addClass("popupme-zoomout-set").show().addClass("popupme-zoomout");
 					}
 					else if(anim == "rotate")
 					{
+						$(".popupme").css('left',leftPer+"%");
+						$(".popupme").css('top',topPer+"%");
+						
 						$(".popupme").addClass("popupme-rotate-set").show().addClass("popupme-rotate");
+					}
+					else if(anim == "slide-top")
+					{
+						$(".popupme").css('left',leftPer+"%");
+						$(".popupme").css('top',(topPer-5)+"%");
+						
+						$(".popupme").show().addClass("popupme-slidetopbottom").css('top',topPer+"%");
+					}
+					else if(anim == "slide-bottom")
+					{
+						$(".popupme").css('left',leftPer+"%");
+						$(".popupme").css('top',(topPer+5)+"%");
+						
+						$(".popupme").show().addClass("popupme-slidetopbottom").css('top',topPer+"%");
+					}
+					else if(anim == "slide-top-bottom")
+					{
+						$(".popupme").css('left',leftPer+"%");
+						$(".popupme").css('top',(topPer-5)+"%");
+						
+						$(".popupme").show().addClass("popupme-slidetopbottom").css('top',topPer+"%");
+					}
+					else if(anim == "slide-bottom-top")
+					{
+						$(".popupme").css('left',leftPer+"%");
+						$(".popupme").css('top',(topPer+5)+"%");
+						
+						$(".popupme").show().addClass("popupme-slidetopbottom").css('top',topPer+"%");
+					}
+					else if(anim == "slide-left")
+					{
+						$(".popupme").css('left',(leftPer-5)+"%");
+						$(".popupme").css('top',topPer+"%");
+						
+						$(".popupme").show().addClass("popupme-slideleftright").css('left',leftPer+"%");
+					}
+					else if(anim == "slide-right")
+					{
+						$(".popupme").css('left',(leftPer+5)+"%");
+						$(".popupme").css('top',topPer+"%");
+						
+						$(".popupme").show().addClass("popupme-slideleftright").css('left',leftPer+"%");
+					}
+					else if(anim == "slide-left-right")
+					{
+						$(".popupme").css('left',(leftPer-5)+"%");
+						$(".popupme").css('top',topPer+"%");
+						
+						$(".popupme").show().addClass("popupme-slideleftright").css('left',leftPer+"%");
+					}
+					else if(anim == "slide-right-left")
+					{
+						$(".popupme").css('left',(leftPer+5)+"%");
+						$(".popupme").css('top',topPer+"%");
+						
+						$(".popupme").show().addClass("popupme-slideleftright").css('left',leftPer+"%");
 					}
 					
 					
@@ -99,6 +169,39 @@ $(document).ready(function(){
 							{
 								$(".popupme").removeClass("popupme-rotate").addClass("popupme-rotate-remove");
 							}
+							else if( anim == 'slide-top' )
+							{
+								$(".popupme").removeClass("popupme-slidetopbottom").addClass("popupme-slidetopbottom-remove").css('top',(topPer-5)+"%");
+							}
+							else if( anim == 'slide-bottom' )
+							{
+								$(".popupme").removeClass("popupme-slidetopbottom").addClass("popupme-slidetopbottom-remove").css('top',(topPer+5)+"%");
+							}
+							else if( anim == 'slide-top-bottom' )
+							{
+								$(".popupme").removeClass("popupme-slidetopbottom").addClass("popupme-slidetopbottom-remove").css('top',(topPer+5)+"%");
+							}
+							else if( anim == 'slide-bottom-top' )
+							{
+								$(".popupme").removeClass("popupme-slidetopbottom").addClass("popupme-slidetopbottom-remove").css('top',(topPer-5)+"%");
+							}
+							else if( anim == 'slide-left' )
+							{
+								$(".popupme").removeClass("popupme-slideleftright").addClass("popupme-slideleftright-remove").css('left',(leftPer-5)+"%");
+							}
+							else if( anim == 'slide-right' )
+							{
+								$(".popupme").removeClass("popupme-slideleftright").addClass("popupme-slideleftright-remove").css('left',(leftPer+5)+"%");
+							}
+							else if( anim == 'slide-left-right' )
+							{
+								$(".popupme").removeClass("popupme-slideleftright").addClass("popupme-slideleftright-remove").css('left',(leftPer+5)+"%");
+							}
+							else if( anim == 'slide-right-left' )
+							{
+								$(".popupme").removeClass("popupme-slideleftright").addClass("popupme-slideleftright-remove").css('left',(leftPer-5)+"%");
+							}
+							
 							
 							//On Exit remove click binding to remove redundant call for all the popups
 							$("#popupme-bg,.popupme .popupme-close").off('click');

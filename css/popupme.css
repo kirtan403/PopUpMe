@@ -249,3 +249,60 @@
 		opacity .5s ease-out;
 }
 
+/*------- Slide-top , Slide-bottom , Slide-top-bottom and Slide-bottom-top Effect -------*/
+
+.popupme-slidetopbottom-remove
+{	
+	-webkit-transition:top .2s ease-out,
+		opacity .2s ease-out,
+		visibility 0s linear .2s;
+	-moz-transition:top .2s ease-out,
+		opacity .2s ease-out,
+		visibility 0s linear .2s;
+	transition:top .2s ease-out,
+		opacity .2s ease-out,
+		visibility 0s linear .2s;
+	visibility:hidden;
+}
+
+.popupme-slidetopbottom
+{
+	visibility:visible;
+	opacity:1;
+	
+	-webkit-transition:top .2s ease-out,
+		opacity .2s ease-out;
+	-moz-transition:top .2s ease-out,
+		opacity .2s ease-out;
+	transition:top .2s ease-out,
+		opacity .2s ease-out;
+}
+
+/*------- Slide-left , Slide-right , Slide-left-right and Slide-right-left Effect -------*/
+
+.popupme-slideleftright-remove
+{	
+	-webkit-transition:left .2s ease-out,
+		opacity .2s ease-out,
+		visibility 0s linear .2s;
+	-moz-transition:left .2s ease-out,
+		opacity .2s ease-out,
+		visibility 0s linear .2s;
+	transition:left .2s ease-out,
+		opacity .2s ease-out,
+		visibility 0s linear .2s;
+	visibility:hidden;
+}
+
+.popupme-slideleftright
+{
+	visibility:visible;
+	opacity:1;
+	
+	-webkit-transition:left .2s ease-out,
+		opacity .2s ease-out;
+	-moz-transition:left .2s ease-out,
+		opacity .2s ease-out;
+	transition:left .2s ease-out,
+		opacity .2s ease-out;
+}
