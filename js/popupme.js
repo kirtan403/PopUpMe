@@ -1,4 +1,4 @@
-// PopUpMe v1.1.0  |  (c) 2014 Kirtan Thakkar | MIT Licence
+// PopUpMe v1.1.3  |  (c) 2014 Kirtan Thakkar | MIT Licence
 $(document).ready(function(){
 	(function ( $ ) {
 			
