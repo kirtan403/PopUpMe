@@ -34,9 +34,12 @@ $(document).ready(function(){
 					var winWidth = $(window).width();
 					
 					var max_height = (winHeight*.8);
+					var max_width = (winWidth*.8);
 					
 					$(".popupme").css("max-height",max_height + "px");
+					$(".popupme").css("max-width",max_width + "px");
 					$(".popupme .popupme-text").css("max-height",(max_height - 100) + "px");
+					
 					
 					var popupHeight = $(".popupme").height();
 					var popupWidth = $(".popupme").width();
