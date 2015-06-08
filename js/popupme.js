@@ -24,6 +24,8 @@ $(document).ready(function(){
 				
 				var topPer,leftPer;
 				var anim = param.animation;
+				var bgclickclose=true;				//Default Value
+				bgclickclose=param.onBgClickClose;
 				
 				var leftPer;
 				var topPer;
@@ -150,7 +152,12 @@ $(document).ready(function(){
 					
 				
 					//----------Exiting Click function on background and close button-------------
-						$("#popupme-bg,.popupme .popupme-close").on('click',function(){
+					if(bgclickclose==false)
+						onCloseClickString = ".popupme .popupme-close";
+					else
+						onCloseClickString = "#popupme-bg,.popupme .popupme-close";
+						
+						$(onCloseClickString).on('click',function(){
 							
 							$("#popupme-bg").removeClass("popupme-show-5").addClass("popupme-hide");
 							
