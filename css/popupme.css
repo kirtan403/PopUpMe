@@ -61,11 +61,11 @@
 {
 	position:absolute;
 	right:10px;
-	top:10px;
+	top:5px;
 	font-family:Verdana;
-	font-size:15px;
+	font-size:20px;
 	text-align:center;
-	background-color:White;
+	color:White;
 	padding-left:8px;
 	padding-right:8px;
 	padding-top:5px;
@@ -76,7 +76,7 @@
 .popupme .popupme-close:hover
 {
 	cursor:pointer;
-	background-color:#DEDEDE;
+	color:#DEDEDE;
 }
 
 .popupme-hide

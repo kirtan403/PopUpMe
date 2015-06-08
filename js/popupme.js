@@ -10,7 +10,7 @@ $(document).ready(function(){
 				if(bgcount==0)
 				{
 					var htmlForBG = '<div id="popupme-bg" class="popupme-background popupme-hide"></div>';
-					var htmlForPopup = '<div class="popupme popupme-opacity-0"><div style="position:relative;"><div class="popupme-close" >X</div><div class="popupme-title"></div><div class="popupme-text"></div></div></div>';
+					var htmlForPopup = '<div class="popupme popupme-opacity-0"><div style="position:relative;"><div class="popupme-close" >&times</div><div class="popupme-title"></div><div class="popupme-text"></div></div></div>';
 					
 					$('body').append(htmlForBG);
 					$('body').append(htmlForPopup);
@@ -40,14 +40,12 @@ $(document).ready(function(){
 					$(".popupme").css("max-width",max_width + "px");
 					$(".popupme .popupme-text").css("max-height",(max_height - 100) + "px");
 					
-					
 					var popupHeight = $(".popupme").height();
 					var popupWidth = $(".popupme").width();
 					
 					leftPer = (((winWidth - popupWidth) / winWidth) * 100 ) / 2 ;
 					
 					topPer = (((winHeight - popupHeight) / winHeight) * 100 ) / 2 ;
-					
 					
 				}
 				
